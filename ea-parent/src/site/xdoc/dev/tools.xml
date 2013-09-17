@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="GBK"?>
+<document>
+<link href="../mycss/text.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/grid.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/BOSStab.css" rel="stylesheet" type="text/css" media="all" />
+
+<div class="box capabilityTitle">统一工具</div>
+<div class="box_4 textArticle">
+<fieldset>
+	<legend>svn-windows客户端 </legend>
+	版本号：win-client-TortoiseSVN-1.6.8.19260-win32-svn-1.6.11 
+	(说明： TortoiseSVN1.7.0的 版本跟eclipse的插件不兼容，暂不升级)
+</fieldset>
+</div>
+
+<div class="box_4 textArticle">
+<fieldset>
+	<legend>svn-eclipse客户端 </legend>
+	文件安装：site-1.6.10.zip  || url升级
+</fieldset>
+</div>
+
+<div class="box_4 textArticle">
+<fieldset>
+	<legend>maven </legend>
+	版本号3.0.3
+</fieldset>
+</div>
+
+<div class="box_4 textArticle">
+<fieldset>
+	<legend>jetty </legend>
+	版本号4.2
+</fieldset>
+</div>
+
+<div class="box_4 textArticle">
+<fieldset>
+	<legend>eclipse </legend>
+	版本号:Helios Service Release 2  Build id: 20110218-0911
+</fieldset>
+<br/>
+</div>
+
+
+<div class="box capabilityTitle">统一工具配置</div>
+
+<br></br><b>-firefox浏览器调试工具-</b>
+<br/>
+方便调试EXT<br></br>
+ <img src="../img/guifan-firefox-firdebug.png" ></img>
+<br/>一定要注意勾上禁止缓存，调试网页时<br/>
+<br/>  <img src="../img/guifan-firefox-firdebug2.png" ></img>
+
+<br/>错误调试窗口，出现脚本错误是显示<br/>
+<br/>  <img src="../img/guifan-firefox-firdebug3.png" ></img>
+
+<br></br><b>-eclispe设置--</b>
+<br/>
+<br></br><b>打开工程默认用UTF-8编码</b>
+ <img src="../img/guifan-utf8.png" ></img>
+ <br></br><b>资源过滤显示eclipse的setting</b>
+  <img src="../img/guifan-res.png" ></img>
+
+
+<br></br><b>.格式化设置</b>
+<pre>
+	修改Windows->Preference->Java->Editor->SaveAction, 选择Format Source Code，Formate All Codes，与Organize Imports
+	代码风格：Windows->Preferences->Java Code Style的Formatter 和 Cleanup 中导入tools/code-quality/eclipse/cleanup-profile.xml 和formatter.xml。
+	（设置后的好处：每次保存代码，会自动保持格式一直，不需要手动处理）
+	Formatter在Eclipse built-in 的基础上做出如下修改
+		每行增至120字符 (Line wrapping)
+		取消三个 Comment Format (Comments) --因为Eclipse的Formatter不能自由换行，老把注释搞成一行的缘故
+	增加cleanup
+	Convert control statement bodies to block(Code Style)
+	Convert for loops to enhanced for loops (Code Style)
+	Organize imports (Code Organizing)
+	Format source code (Code Organizing)
+	Remove trailing whitespaces on non empty lines(Code Organizing)
+	修改Windows->Preferences->XML->XML Files, 取消XML缺乏DTD的warning；
+	修改Windows->Preferences->Genernal->Editors->TextEditors->Spelling取消spell checking
+	
+	
+</pre>
+
+<br></br><b>.热键设置</b>
+<pre>
+	修改Preference->General->Keys ，调整与输入法切换冲突的内容助手热键， 找到Content Assist, 改为诸如Shift+Space
+</pre>
+
+
+
+</document>

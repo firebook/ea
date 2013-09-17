@@ -1,0 +1,46 @@
+table {
+	border-collapse:collapse;
+	width:100%;
+}
+thead {
+
+}
+thead tr {
+	background:url(../images/table_title.jpg) repeat-x;
+}
+thead td {
+	border:#BBCEDB solid 1px;padding:0px 10px 0px 10px;
+}
+tbody {
+
+}
+tbody tr {
+	background:expression(this.rowIndex%2==0 ? '#FFFFFF' : '#EAF1F5');
+}
+tbody td {
+	border:#A9AFB4 solid 1px;padding:0px 10px 0px 10px;
+}
+tfoot {
+
+}
+tfoot tr {
+	
+}
+tfoot td {
+	border:#A9AFB4 solid 1px;padding:0px 10px 0px 10px;
+}
+table a {
+	color:#4F9D02;border-bottom:#E89F03 dashed 0px;
+}
+table a:link {
+	
+}
+table a:hover {
+	color:#4F9D02;border-bottom:#E89F03 dashed 0px;font-weight:900;
+}
+table a:active {
+	
+}
+table a:visited {
+	
+}

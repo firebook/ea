@@ -1,0 +1,57 @@
+.iframemenu {
+	width:100%;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:0px;
+	over-flow:hidden;
+}
+.iframewindow {
+	width:100%;
+	border:#55819F solid 1px;
+	border-top:#55819F solid 3px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.menu_on {
+	height:22px;
+	padding-top:5px;
+	border:#55819F solid 1px;
+	border-bottom:#55819F solid 0px;
+	padding-left:15px;
+	padding-right:15px;
+	background:#55819F;
+	font-size:12px;
+	font-weight:100;
+	color:#FFF;
+	float:left;
+	word-break:break-all;
+	white-space:nowrap;
+	cursor:hand;
+	text-align:center;
+	margin-right:1px;
+}
+.menu_off {
+	height:18px;
+	padding-top:3px;
+	margin-top:2px;
+	border:#D9E2E8 solid 1px;
+	border-bottom:#D9E2E8 outset 0px;
+	padding-left:15px;
+	padding-right:15px;
+	background:#D9E2E8;
+	font-size:12px;
+	font-weight:100;
+	color:#999B9B;
+	float:left;
+	word-break:break-all;
+	white-space:nowrap;
+	cursor:hand;
+	text-align:center;
+	margin-right:1px;
+}
+.area_on {
+	display:block; width:100%;
+}
+.area_off {
+	display:none; width:100%;
+}

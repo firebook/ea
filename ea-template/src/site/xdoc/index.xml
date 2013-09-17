@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<document>
+    <properties>
+    	<title>train-demo</title>
+    </properties>
+    <body>
+		<div class="summary">
+			<div class="news">
+				<p><b>EA (企业架构)</b></p>	
+            	<p>本系统主要完成组织架构定义和人员管理，并且提供对外访问的API接口。</p>	
+             
+			   <br></br><a target="_blank" href="../eacore/index.htm">EA数据库模型</a>
+				<br></br><a target="_blank" href="../ea-core/apidocs/com/app/manager/ea/InfEa.html">ea-core数据访问API</a>
+				<br></br><a target="_blank" href="../base-common/index.html">base-common 公共组件</a>
+
+				
+	
+		       
+		   
+			</div>
+			
+					
+		</div>
+  </body>
+</document>

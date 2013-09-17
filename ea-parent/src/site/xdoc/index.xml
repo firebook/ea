@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="GBK"?>
+<document>
+    <properties>
+    	<title>train-demo</title>
+    </properties>
+    <body>
+		<div class="summary">
+			<div class="news">
+				<p><b>新人入门</b></p>	
+       
+			    <p>1.先下载java-web-sample 进行SSH框架学习
+			     <br></br>--SSH架构：Spring 2.5+hibernate3.6+freemarker2.3.16
+				 <br></br>--数据库：集成HSQL文本数据库(支持其他HIBERNATE支持的所有数据库)
+				 <br></br>--WEB服务器：集成jetty服务器
+								    
+							    
+			    </p>
+			    <p>2.向tom.lingli@ericsson.com申请练习任务</p>
+			    <p>3.由tom进行练习任务评审，通过后成为项目成员，开通业务系统开发权限</p>
+			 
+			
+			
+				 <br></br><b>项目整体介绍</b>
+			 	    <br></br> base-common  公共组件项目，所有业务类项目需要依赖于该项目，统一公共组件积累.
+				    <br></br> java-web-sample 团队所有web项目开发的基础框架原型，是入门者的学习项目，以此项目做为项目架构规范.
+				    <br></br> ea-core       团队内部所有项目公用一套用户管理，此项目为用户数据访问API.
+			 	<br></br><a target="_blank" href="ea/pa/index.htm">项目之间关系</a>
+				<br></br><a target="_blank" href="ea/data/index.htm">EA数据库模型</a>
+				<br></br><a target="_blank" href="../ea-core/apidocs/com/app/manager/ea/InfEa.html">ea-core数据访问API</a>
+				<br></br><a target="_blank" href="../base-common/index.htm">base-common 公共组件</a>
+
+				
+	
+		       
+		   
+			</div>
+			
+					
+		</div>
+  </body>
+</document>

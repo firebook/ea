@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyMaven">
+    <bannerLeft>
+        <name>公共模块</name>
+        <src>img/common5.jpg</src>
+        <href>http://localhost:8080/ueaac</href>
+    </bannerLeft>
+    <body>
+	    <menu name="JAVA虚拟团队">
+	    	<item name="首页" href="index.html"/>	
+			<item name="代码规范" href="dev/rule.html"/>		
+			<item name="统一工具" href="dev/tools.html"/>		
+			<item name="TDD规范" href="dev/tdd.html"/>		
+		</menu>
+    </body>
+</project>

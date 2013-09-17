@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<document>
+    <body>
+       <p>
+       	项目之间的ApI接口，一定要严格编写测试案例
+       </p>
+	   <p>Spring测试驱动最佳实践：用junit调试模式，可以调试，不用初始化</p>
+
+	 
+    </body>
+</document>

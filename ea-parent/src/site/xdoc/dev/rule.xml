@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="GBK"?>
+<document>
+<link href="../mycss/text.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/grid.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../mycss/BOSStab.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<div class="box capabilityTitle">统一JAVA编码规范</div>
+<b>注释写法</b>
+<pre>
+	/*
+	 *Copyright (C), 2006-2009, Sunrise Tech. Co., Ltd.
+	 *SUNRISE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	 *CreateDate:2006-11-08
+	 */
+	package com.sunrise;
+	/**
+	 * 本类的说明：
+	 * 这个类是为了演示如何规范写注释的方法，所有标准 参考SUN公司JDK源码风格
+	 *
+	 *SampleRelation是为了演示在JDOC文件中能直接跳转到另一个类的注释而定义的相关类，这样可以让阅读注释的人除了
+	 *查看本类，还能方便跳入相关类。
+	 *@see SampleRelation   SampleRelation（是跟这个类定义有关系的一个类）
+	 *@author lingli   
+	 */
+	public class Sample {
+		/**
+		 *本方法用来说明如果生成方法的帮助文件  方法命名是第一个字母小写，后面的单词用大写字母隔开。
+		 * @param para1   参数是用来做。。。。
+		 * @throws Exception  只是为了测试，随意定义抛出异常
+		 * @return  为了演示，随意定义的一个返回STRING
+		 */
+		public String showMayNote(String para1) throws Exception {
+			try {
+				char aChar = 'A';
+				switch (aChar) {
+				case 'A':
+					break;
+					//情况A的注释
+				case 'B':
+					break;
+					//情况B的注释				
+				default:
+				}			
+	            boolean flag=true;
+				if(flag==true) {
+					System.out.println("演示if多层嵌套的注释");
+					while (flag==false) {
+						System.out.println("演示while多层嵌套的注释");
+					} //结束：while (flag==false) 指明该条while语句结束
+				} //结束：if(flag==true)指明是哪条if语句结束
+	
+			} catch (Exception e) {
+				throw new Exception();
+			}
+			return "ok";
+		}
+	}
+</pre>
+
+
+<b>开发代码</b>
+<pre>
+
+测试案例：遵守约定，
+a)	类放在test包中
+b)	类名用XXXTest结尾
+c)	方法用testMethod命名
+</pre>
+
+<b>开发代码</b>
+<pre>
+
+
+其它:
+	1.变量名=前缀＋助记符，助记命名规则遵循骆驼法。
+	各种参数前缀
+	类型前缀	类型
+	i	Int
+	s	String
+	f	float(single)
+	d	Double
+	b	Bool
+	l	long(int64)
+	c	Char
+	2.函数名
+	命名规范必须与所使用的系统风格保持一致，并在同一项目中统一，比如 
+	示例：addUser不允许，add_user、AddUser、m_AddUser。
+	避免用含义不清的动词如process、handle等为函数命名，因为这些动词并没有说明要具体做什么
+	3.所有常量名统一使用大写
+</pre>
+
+</document>

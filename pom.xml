@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>ea</groupId>
+<artifactId>ea-pom</artifactId> 
+<name>ea-all</name>
+<description>ea projects</description> 
+<packaging>pom</packaging>
+<version>1.0-SNAPSHOT</version>
+  
+<profiles>
+  <profile>
+   <id>default</id>
+   <activation>
+    <activeByDefault>true</activeByDefault>
+   </activation>
+   <modules>
+      <module>ea-parent</module> 
+      <module>ea-common</module> 
+      <module>ea-core</module>
+      <module>ea-template</module>
+      <!-- 
+      <module>apm</module>
+      <module>ea-activiti</module> 
+      <module>ea</module>
+      <module>ea</module>
+      <module>ea-view</module>
+      <module>ea-oa</module> 
+      <module>ea-view</module>
+     -->
+   </modules>
+  </profile>
+  
+</profiles>
+</project>
+
+ 

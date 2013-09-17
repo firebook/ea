@@ -1,0 +1,33 @@
+body {
+	font-size: 12px;
+}
+
+#footer {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#nav_panel li {
+	list-style: none;
+	text-align: center;
+	padding-top: 5px;
+}
+
+#header {
+	background: #7F99BE url(../images/logo/layout-browser-hd-bg.gif) repeat-x
+		center;
+}
+
+#header h1 {
+	font-size: 14px;
+	color: #fff;
+	font-weight: border;
+	position:absolute;
+	padding: 5px 15px;
+	letter-spacing: 5px;
+}
+
+#header img {
+    top:2px;
+    padding: 2px 10px;
+}

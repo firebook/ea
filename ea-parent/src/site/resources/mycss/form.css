@@ -1,0 +1,15 @@
+/*-------base form style--------*/
+input,select,textarea {
+	background:#ffffff;
+	height:20px;
+}
+.text {width:150px;border:#a1a1a1 solid 1px;}
+.password {width:150px;border:#a1a1a1 solid 1px;}
+.button,.submit,.reset {text-align:center;background:#B8CFE0;border:#96BBD5 ridge 1px;padding-left:10px;padding-right:10px;height:20px;line-height:16px;margin-top:2px;margin-bottom:2px;cursor:pointer;}
+.radio,.checkbox {position:relative;background:;margin-top:1px;}
+.upfile {width:200px;border:#a1a1a1 solid 1px;}
+.select {width:150px;}
+.textarea {width:500px;height:150px;border:#a1a1a1 solid 1px;text-align:left;padding:2px;}
+.text:focus {border:#000000 solid 1px;}
+
+label {width:100px;word-break:break-all;padding-left:10px;padding-right:10px;}

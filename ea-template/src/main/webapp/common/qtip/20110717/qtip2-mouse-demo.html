@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                                                             
+<link rel="stylesheet" type="text/css" href="jquery.qtip.css" />
+<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="jquery.qtip.js"></script>
+</head>
+<body class="demo-mouse">
+
+<div id="content" class="preview">
+   
+<div id="demo-mouse" class="box" width=300 height=400>
+	<h3>Hover over this box to see mouse tracking in action</h3>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+
+<script type="text/javascript" class="example">
+$(document).ready(function()
+{
+	$('#demo-mouse').qtip({
+		content: 'I position myself at the current mouse position',
+		position: {
+			my: 'top left',
+			target: 'mouse',
+			viewport: $(window), // Keep it on-screen at all times if possible
+			adjust: {
+				x: 100,  y: 100
+			}
+		},
+		hide: {
+			fixed: true // Helps to prevent the tooltip from hiding ocassionally when tracking!
+		},
+		style: 'ui-tooltip-shadow'
+	});
+});
+</script>
+</div>
+</body>
+</html>

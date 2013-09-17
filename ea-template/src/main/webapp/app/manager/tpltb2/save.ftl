@@ -1,0 +1,1 @@
+<#include "menu_tpltb2.ftl">

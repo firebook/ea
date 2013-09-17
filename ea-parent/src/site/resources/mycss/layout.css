@@ -1,0 +1,155 @@
+/*-----------布局-------------*/
+body {
+	width:100%;padding:0px;margin-right:-1px;
+	height:100%!important;height:100px;
+}
+div {word-break:break-all;}
+.box,.box_1,.box_2,.box_3,.box_4,.box_5,.box_6,.box_7,.box_8,.box_9,.box_10,.box_11,.box_12,.box_13,.box_14,.box_15,.box_16,.box_17,.box_18,.box_19 {
+float:left;border:#000 solid 0px;position:relative;height:auto;display:block;
+}
+.box  {width:100%;}
+.box_1 {width:5%;}
+.box_2 {width:10%;}
+.box_3 {width:15%;}
+.box_4 {width:20%;}
+.box_5 {width:25%;}
+.box_6 {width:30%;}
+.box_7 {width:35%;}
+.box_8 {width:40%;}
+.box_9 {width:45%;}
+.box_10 {width:50%;}
+.box_11 {width:55%;}
+.box_12 {width:60%;}
+.box_13 {width:65%;}
+.box_14 {width:70%;}
+.box_15 {width:75%;}
+.box_16 {width:80%;}
+.box_17 {width:85%;}
+.box_18 {width:90%;}
+.box_19 {width:95%;}
+.left_0 {left:0%;}
+.left_1 {left:5%;}
+.left_2 {left:10%;}
+.left_3 {left:15%;}
+.left_4 {left:20%;}
+.left_5 {left:25%;}
+.left_6 {left:30%;}
+.left_7 {left:35%;}
+.left_8 {left:40%;}
+.left_9 {left:45%;}
+.left_10 {left:50%;}
+.left_11 {left:55%;}
+.left_12 {left:60%;}
+.left_13 {left:65%;}
+.left_14 {left:70%;}
+.left_15 {left:75%;}
+.left_16 {left:80%;}
+.left_17 {left:85%;}
+.left_18 {left:90%;}
+.left_19 {left:95%;}
+.left_20 {left:100%;}
+.right_0 {right:0%;}
+.right_1 {right:5%;}
+.right_2 {right:10%;}
+.right_3 {right:15%;}
+.right_4 {right:20%;}
+.right_5 {right:25%;}
+.right_6 {right:30%;}
+.right_7 {right:35%;}
+.right_8 {right:40%;}
+.right_9 {right:45%;}
+.right_10 {right:50%;}
+.right_11 {right:55%;}
+.right_12 {right:60%;}
+.right_13 {right:65%;}
+.right_14 {right:70%;}
+.right_15 {right:75%;}
+.right_16 {right:80%;}
+.right_17 {right:85%;}
+.right_18 {right:90%;}
+.right_19 {right:95%;}
+.right_20 {right:100%;}
+.maxdiv {position:absolute;height:100%;z-index:100;width:100%}
+.left {float:none;position:absolute;left:0px;}
+.right {float:none;position:relative;right:0px;}
+.center {margin-left:auto;margin-right:auto;float:none;}
+.top {top:0px;}
+.bottom {bottom:0px;}
+.middle {top:25%;}
+.clear {clear:both;display:block;margin-top:0px;}
+.hide {display:none;}
+
+
+/*-----------外观-------------*/
+/*-frame边框-*/
+.frameBorder {
+	background:#59839F;height:100%;
+}
+/*-top页面外观-*/
+.frameTop {
+	background:url(../images/topbackground.gif) repeat-x;height:63px;
+}
+/*-面包屑外观-*/
+.location {
+	padding-left:10px;padding-top:2px;padding-bottom:2px;background:#E4F2FB;
+}
+/*-栏目标题-*/
+.capabilityTitle {
+	padding-left:24px;padding-top:2px;padding-bottom:2px;background:#B7D5E9 url(../images/capabilityTitle.gif) no-repeat 5px 4px;border:#B7D5E9 ridge 1px;margin-bottom:5px;
+	font-weight:900;
+}
+/*-页码-*/
+.tablePage {
+	text-align:right;padding-right:10px;padding-top:2px;padding-bottom:2px;
+}
+/*-按钮区域-*/
+.buttonArea {
+	text-align:right;padding-right:10px;padding-top:5px;padding-bottom:2px;border-top:#86A3CA solid 0px;padding-bottom:5px;margin-top:5px;
+	border-top:#55819F solid 1px;
+	/*background:url(../images/buttonAreaBackGround.gif) repeat-x;*/
+}
+/*-文本区域-*/
+.textArticle {
+	padding:10px;
+}
+/*-文本区域中的图像-*/
+.textArticle img {
+	margin:8px;
+}
+/*-文本区域的文章标题-*/
+.textArticleTitle {
+	padding:10px;text-align:center;
+}
+/*-作者来源的注释区域-*/
+.textArticleTip {
+	padding:10px;text-align:center;
+}
+/*-边框-*/
+.border {
+	border:#BFBFBF solid 1px;
+}
+/*-错误页面中的图像-*/
+.errorpageimage {
+	text-align:center;padding-top:20px;
+}
+/*-浮动窗口的基本背景-*/
+.openFloatWindowBase {
+	width:100%;height:100%;background:#FFFFFF;position:absolute;left:0px;top:0px;z-index:100;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+/*-浮动窗口本身-*/
+.openFloatWindow {
+	position:absolute;z-index:1000;text-align:center;width:100%;height:100%;left:0px;top:0px;
+}
+/*-登录顶端修饰条-*/
+.loginbordertop{
+	position:absolute;top:0px;font-size:0px;height:4px;background:#59839F;z-index:200;left:0px;
+}
+/*-登录底端修饰条-*/
+.loginborderbottom{
+	position:absolute;bottom:0px;font-size:0px;height:6px;background:#59839F;z-index:200;left:0px;
+}
+/*-登录窗口背景-*/
+.loginwin {
+	border:#59839F solid 1px;padding-bottom:30px;border-top:#59839F solid 3px;background:#ffffff url(../images/11.gif);top:25%;
+}
