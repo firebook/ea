@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds" debug="false">
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder charset="GBK">
+			<!--<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger -logback-base-common ：%msg%n -->
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-3level [%file:%line]：%msg %n</pattern>
+			<!--<pattern>%-4relative [%thread]  %logger{35} - %msg %n</pattern>-->
+		</encoder>
+	</appender>
+	<appender name="file" class="ch.qos.logback.core.FileAppender">
+		<file>log.txt</file>
+		<append>true</append>
+		<encoder>
+			<pattern>[demo-activiti]%d{HH:mm:ss.SSS} [%thread]  %-3level [%file:%line]：%msg %n</pattern>
+		</encoder>
+	</appender>	
+
+	<logger name="java">
+		<appender-ref ref="stdout" />
+		<level value="warn" />
+	</logger>
+	<logger name="org">
+		<appender-ref ref="stdout" />
+		<level value="warn" />
+	</logger>	
+	<logger name="net">
+		<appender-ref ref="stdout" />
+		<level value="warn" />
+	</logger>	
+    <!-- 必须写在下面 -->
+    <root>  
+        <level value="debug" />  
+        <appender-ref ref="stdout" /> 
+     
+    </root>  
+</configuration> 
