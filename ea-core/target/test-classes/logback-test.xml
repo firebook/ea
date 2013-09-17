@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds" debug="false">
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder charset="GBK">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-3level [%file:%line]：%msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="java">
+		<appender-ref ref="stdout" />
+		<level value="warn" />
+	</logger>
+	<logger name="org">
+		<appender-ref ref="stdout" />
+		<level value="error" />
+	</logger>	
+	<logger name="net">
+		<appender-ref ref="stdout" />
+		<level value="warn" />
+	</logger>	
+    <!-- 必须写在下面 -->
+    <root>  
+        <level value="debug" />  
+        <appender-ref ref="stdout" /> 
+     
+    </root>  
+</configuration> 
