@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class CodeGen {
 	private final static Logger log = LoggerFactory.getLogger(CodeGen.class);
 	/**
-	 * 字符串变成新文件1
+	 * 字符串变成新文件2
 	 * */
 	public static void strToDoc(String filename, String str, boolean flag) {
 		FileOutputStream fostemp;
