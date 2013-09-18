@@ -1,4 +1,0 @@
-4502 [main] INFO  com.common.spring.SpringDaoTest - 测试结束
-5089 [main] INFO  com.common.spring.SpringDaoTest - 测试结束
-4801 [main] INFO  com.common.spring.SpringDaoTest - 测试结束
-4815 [main] INFO  com.common.spring.SpringDaoTest - 测试结束
