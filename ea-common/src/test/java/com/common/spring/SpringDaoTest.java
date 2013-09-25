@@ -24,16 +24,15 @@ import com.common.spring.ssh.page.Pagination;
 public class SpringDaoTest {
 	static Logger log = LoggerFactory.getLogger(SpringDaoTest.class);	
 	protected static ApplicationContext applicationContext;
-	private static SessionFactory sessionFactory;
-	private static Session session;
-	public static BaseDao eaDaoTarget;
+	
+	public static BaseDao basedao;
 	
 
     static void create_tb1(String name,String password){
     	 Tb1 tb1=new Tb1();
 	    tb1.setName(name);
 	    tb1.setPassword(password);
-	    eaDaoTarget.create(tb1);
+	    basedao.create(tb1);
     }
 	@BeforeClass
 	public static void init() throws Exception {
@@ -42,13 +41,8 @@ public class SpringDaoTest {
 				String configFile = "spring.xml";
 				applicationContext = new ClassPathXmlApplicationContext(
 						configFile);
-				sessionFactory = (SessionFactory) applicationContext
-						.getBean("eaSessionFactory");
-				session = SessionFactoryUtils.getSession(sessionFactory, true);
-				session.setFlushMode(FlushMode.COMMIT);
-				TransactionSynchronizationManager.bindResource(sessionFactory,
-						new SessionHolder(session));
-				eaDaoTarget = (BaseDao) applicationContext
+				
+				basedao = (BaseDao) applicationContext
 						.getBean("eaDaoTarget");
                 
 				//System.err.println("红色 ");
@@ -65,22 +59,25 @@ public class SpringDaoTest {
 	@Test
 	public void create() {
 	    Tb1 tb1=new Tb1();
-	    eaDaoTarget.create(tb1);
-	    assertEquals("加上初始化的1条，应该是2条", 2,  eaDaoTarget.find("from Tb1").size()); 
-		assertEquals("加上初始化的1条，应该是2条", 2, eaDaoTarget.loadAll(Tb1.class).size()); 
+	    basedao.create(tb1);
+	    assertEquals("加上初始化的1条，应该是2条", 2,  basedao.find("from Tb1").size()); 
+		assertEquals("加上初始化的1条，应该是2条", 2, basedao.loadAll(Tb1.class).size()); 
 	}
 	@Test
 	public void load() {
-		 Tb1 tb1=(Tb1)eaDaoTarget.loadById("Tb1", Long.parseLong("1"));
+		 Tb1 tb1=(Tb1)basedao.loadById("Tb1", Long.parseLong("1"));
 		 assertEquals("记录1的name是tom","tom" ,tb1.getName());
-		 tb1=(Tb1)eaDaoTarget.loadById(Tb1.class, Long.parseLong("1"));
+		 tb1=(Tb1)basedao.loadById(Tb1.class, Long.parseLong("1"));
+		 assertEquals("记录1的name是tom","tom" ,tb1.getName());
+		 
+		 tb1=(Tb1)basedao.loadByFieldValue(Tb1.class, "name", "tom");
 		 assertEquals("记录1的name是tom","tom" ,tb1.getName());
 	}
 	@Test
 	public void find() {
-		assertEquals("模糊查询", 1, eaDaoTarget.find("select tb1 from Tb1 tb1 where tb1.name  like ?", "%tom%").size()); 
-		assertEquals("单个参数查询", 1, eaDaoTarget.find("select tb1 from Tb1 tb1 where tb1.name=?", "tom").size()); 
-		assertEquals("多参数查询 ", 1, eaDaoTarget.find("select tb1 from Tb1 tb1 where tb1.name=? and tb1.password=?", new String[]{"tom", "123"}).size()); 
+		assertEquals("模糊查询", 1, basedao.find("select tb1 from Tb1 tb1 where tb1.name  like ?", "%tom%").size()); 
+		assertEquals("单个参数查询", 1, basedao.find("select tb1 from Tb1 tb1 where tb1.name=?", "tom").size()); 
+		assertEquals("多参数查询 ", 1, basedao.find("select tb1 from Tb1 tb1 where tb1.name=? and tb1.password=?", new String[]{"tom", "123"}).size()); 
 	}
 	
 	
@@ -89,10 +86,10 @@ public class SpringDaoTest {
 		Pagination pagination=new Pagination();
 		pagination.setCurrentPage(0);
 		pagination.setMaxSize(1);
-		List tpltb1List = eaDaoTarget.page("from Tb1", pagination);
+		List tpltb1List = basedao.page("from Tb1", pagination);
 		assertEquals("", 1,  tpltb1List.size()); 
 		pagination.setMaxSize(2);
-		tpltb1List = eaDaoTarget.page("from Tb1", pagination);
+		tpltb1List = basedao.page("from Tb1", pagination);
 		assertEquals("", 2,  tpltb1List.size()); 
 	}	
 	
